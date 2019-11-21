@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+  width:100%;
+  box-sizing: border-box;
+  font-family: 'Courier', monospace;
+  text-align: center;
+}
+h1 {
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+nav {
+  align-self: stretch;
+  text-align: center;
+  flex-grow: 2;
+}
+
+nav a {
+  flex-grow: 2;
+}
+
+.back, .fwd {
+  position: fixed;
+  font-size: 40px;
+}
+
+.back {
+  left: 0;
+  margin-left: 20px;
+}
+
+.fwd {
+  right: 0;
+  margin-right: 20px;
+}
+
+canvas {
+  position: static;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: block;
+  width: 70.59vw !important;
+  height: 100vw !important;
+}
+
+a.back, a.fwd {
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 32px;
+  color: #0000FF;
+}
+
+a.back:hover,
+a.back:focus,
+a.fwd:hover,
+a.fwd:focus {
+  color: #0000b2;
+}
+
+.glitchButton {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
